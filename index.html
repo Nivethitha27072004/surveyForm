@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body{
+            background-color: rgb(222, 220, 224);
+        }
+        .container{
+            border: 2px solid;
+            padding: 50px;
+            width:200px;
+          border-radius: 5px;
+          margin-left: 600px;
+          margin-top: 50px;
+          background-color: rgb(222, 220, 224);
+        }
+        .container:hover{
+            background-color: rgb(215, 215, 240);
+        }
+        .formformat{
+            padding: 4px;
+        }
+      .container  button{
+            background-color: rgb(121, 181, 121);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <form id="form1">
+            <div class="formformat">
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter your Name">
+            </div>
+
+            <div class="formformat">
+                <label for="age">Age:</label>
+                <input type="Number" placeholder="Enter your Age">
+            </div>
+    
+            <div class="formformat">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Enter your email">
+            </div>
+             <div class="formformat">
+                <label for="Gender">Gender:</label>
+                <br>
+                 <input type="radio"placeholder="Enter your gender"name="1">
+                <label >Female</label>
+                <br>
+                 <input type="radio"placeholder="Enter your gender"name="1">
+                <label >Male</label>
+                <br>
+                 <input type="radio"placeholder="Enter your gender"name="1">
+                <label >TransGender</label>
+               
+            </div>
+
+            <div class="formformat">
+              <label for="description">Describibe yourself:</label>
+           <select  id="des">
+             <option value="">student</option>
+             <option value="">fresher</option>
+             <option value="">expirenced</option>
+
+           </select>
+
+            </div>
+
+            <div class="formformat">
+                <label >Prefered Language:</label>
+                <div><label for="op1">
+                    <input type="checkbox"name="inp">java
+                </label></div>
+                <div><label for="op2">
+                    <input type="checkbox"name="inp">C
+                </label></div>
+                <div></div>
+                <label for="op3">
+                    <input type="checkbox"name="inp">python
+                </label>
+
+            </div>
+
+            <div class="formformat">
+                <label for="intro">About You:</label>
+                <textarea name="intro" id="intro"></textarea>
+            </div>
+
+
+<button type="submit" value="submit">Submit</button>
+        </form>
+    </div>
+    
+</body>
+</html>
